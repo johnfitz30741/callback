@@ -1,5 +1,8 @@
 * Callback Hell
   shows all webRequest and webNavigation callbacks on the console
+  
+  
+[[https://chrome.google.com/webstore/detail/jsguardian/fciaondajkblghjakefelgihacocdbeo][https://img.shields.io/chrome-web-store/v/fciaondajkblghjakefelgihacocdbeo.svg]]
 ** Credits
 *** Icons
 - flame icon made by [[https://www.flaticon.com/authors/vectors-market][Vectors Market]] from [[https://www.flaticon.com][www.flaticon.com]] is licensed
