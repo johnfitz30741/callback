@@ -21,12 +21,14 @@ navEventList.forEach(function(e) {
 var reqEventList = ["onBeforeRequest", "onBeforeSendHeaders", "onSendHeaders", "onHeadersReceived", "onAuthRequired", "onResponseStarted", "onBeforeRedirect", "onCompleted", "onErrorOccurred"];
 
 reqEventList.forEach(function(e) {
-  chrome.webRequest[e].addListener(function(data) {
-    if (typeof data)
-      console.log('inHandler', e, data);
-    else
-      console.error('inHandlerError', e);
-  }, {urls: ['<all_urls>']});
+  chrome.webRequest[e].addListener(
+    function(data) {
+      if (typeof data)
+        console.log('inHandler', e, data);
+      else
+        console.error('inHandlerError', e);
+    },
+    {urls: ['<all_urls>']});
 });
 
 var reqEventNoFilterList = [];
@@ -36,4 +38,12 @@ chrome.webRequest["onActionIgnored"].addListener(function(data) {
       console.log('inHandler', e, data);
     else
       console.error('inHandlerError', e);
+});
+
+// history
+chrome.history.onVisited.addListener(function(data) {
+    if (typeof data)
+      console.log('inHandler', 'history', data);
+    else
+      console.error('inHandlerError', 'history');
 });

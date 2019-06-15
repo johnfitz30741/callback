@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.1",
+  "version": "0.2.0",
   
   "name": "Callback hell",
   "description": "lists all callbacks",
@@ -15,6 +15,9 @@
   },
 
   "permissions": [
-    "webRequest", "webNavigation", "<all_urls>"
+    "<all_urls>",
+    "history",
+    "webRequest",
+    "webNavigation"
   ]
 }
