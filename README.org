@@ -1,5 +1,13 @@
 * Callback Hell
-  shows all webRequest and webNavigation callbacks on the console
+Prints all WebRequest, WebNavigation, and History API callbacks to the log.
+
+This is intended for development purposes. To see them,
+
+1. go to chrome:extensions
+2. select developer mode
+3. go to this extension
+4. click "background page"
+5. open console in resulting window
 ** Credits
 *** Icons
 - flame icon made by [[https://www.flaticon.com/authors/vectors-market][Vectors Market]] from [[https://www.flaticon.com][www.flaticon.com]] is licensed
