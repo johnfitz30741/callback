@@ -1,5 +1,7 @@
 * Callback Hell
 Prints all WebRequest, WebNavigation, and History API callbacks to the log.
+  
+[[https://chrome.google.com/webstore/detail/jsguardian/fciaondajkblghjakefelgihacocdbeo][https://img.shields.io/chrome-web-store/v/fciaondajkblghjakefelgihacocdbeo.svg]]
 
 This is intended for development purposes. To see them,
 
